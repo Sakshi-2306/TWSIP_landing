@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- Include Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Include your custom styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Include Boxicons CSS from UNPKG -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include Font Awesome (another version) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!--Including Font awesome kit-->
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3a534e8c10.js" crossorigin="anonymous"></script>
+    <style>
+        /* Move your inline CSS to the <style> section */
+        .img_deg {
+            float: right;
+            width: 50%;
+        }
+
+        body {
+            background-image: url('backg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            object-fit: cover;
+            height: 100vh;
+            width: 100vw;
+
+
+        }
+
+        /* Add CSS to hide sections initially */
+        .home,
+        .about,
+        .connect {
+            display: none;
+        }
+
+        /* Add CSS to style the sections */
+        .home {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .about {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        .connect {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Preloader-->
+    <div id="preloader"> </div>
+
+    <div class="landing_page">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand "><img src="logo1.jpg" width="55" height="45"></a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bx bx-menu bx-md"></i>
+            </button>
+            <div class="collapse navbar-collapse ul-bg" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link mx-3 text-white">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link mx-3 text-white">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#connect" class="nav-link mx-3 text-white">CONNECT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Home Section -->
+            <div class="home" id="home" style="display: block;">
+                <img src="tumblr_mkb5l2GLkK1rlono5o1_500.gif" alt="">
+                <h2>Explore new places with<br /><span>Travel 'N' Tour</span></h2>
+                <h3>“The world is a book, and those who do not travel read only one page!!”</h3>
+            </div>
+
+            <!-- About Section -->
+            <div class="about" id="about">
+                <img class="img_deg" src="tourandtravel1.jpg" alt="Tour and Travel">
+                <p class="para">Travel N Tour is one of the oldest websites established in 1983. It provides the best
+                    traveling
+                    experience through buses, trains, flights, etc., at a very reasonable cost. Apart from this, we also
+                    help our customers locate places to stay according to their needs. We, the members of 'Tours N
+                    Travels,' are excited and happy to provide a luxurious experience to our customers. We hope that you
+                    will connect with us by logging in to our site and downloading the app for free for a smooth
+                    experience.</p>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="connect" id="connect">
+                <div>
+                    <form style="max-width: 450px; margin: auto;">
+                        <h1>Login</h1>
+                        <p class="log"><i>Already have an account? <a href="#">Sign In</a></i></p>
+
+                        <div class="inp">
+                            <i class="fa fa-user icon"></i>
+                            <input type="text" placeholder="Your Name" />
+                        </div>
+
+                        <div class="inp">
+                            <i class="fa fa-envelope icon"></i>
+                            <input type="email" placeholder="Enter a valid email" />
+                        </div>
+
+                        <div class="inp">
+                            <i class="fa fa-lock icon"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+
+                        <div class="check">
+                            <label>
+                                <input type="checkbox" checked> Remember Me
+                            </label>
+                        </div>
+                        <br />
+
+                        <div class="bton">
+                            <button class="button rounded-corners">Cancel</button>
+                            <button class="button rounded-corners">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--icons-->
+            <div class="icons">
+                <a href="#" class="facebook">facebook<i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="twitter">twitter<i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="instagram">instagram<i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="youtube">youtube<i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- Add this script to your HTML, preferably just before the closing </body> tag -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSection = document.getElementById("about");
+            const connectSection = document.getElementById("connect");
+            const homeSection = document.getElementById("home");
+
+            // Function to show the About section
+            function showAbout() {
+                aboutSection.style.display = "block";
+                connectSection.style.display = "none";
+                homeSection.style.display = "none";
+            }
+
+            // Function to show the Connect section
+            function showConnect() {
+                aboutSection.style.display = "none";
+                connectSection.style.display = "block";
+                homeSection.style.display = "none";
+            }
+
+            function showHome() {
+                aboutSection.style.display = "none";
+                connectSection.style.display = "none";
+                homeSection.style.display = "block";
+            }
+
+            // Attach click event handlers to the navigation links
+            const aboutLink = document.querySelector('a[href="#about"]');
+            const connectLink = document.querySelector('a[href="#connect"]');
+            const homeLink = document.querySelector('a[href="#home"]');
+
+            aboutLink.addEventListener("click", showAbout);
+            connectLink.addEventListener("click", showConnect);
+            homeLink.addEventListener("click", showHome);
+        });
+    </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", setTimeout(() => {
+            loader.style.display = "none";
+        }, "1000"));
+
+    </script>
+
+    <script type="text/javascript">
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarNav')
+        const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
+
+    </script>
+
+</body>
+
+</html>
